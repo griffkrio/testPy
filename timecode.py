@@ -20,3 +20,5 @@ while True:
                     break
                     print(d==a)
     print('ok')
+    import time
+    
