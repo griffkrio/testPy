@@ -1,4 +1,5 @@
-while True:
+
+    while True:
     import os.path, time
     (mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat('/home/creativetrendadmin/pythonTEst/TestBuild1.txt')
     a=mtime
@@ -13,12 +14,16 @@ while True:
                     import shutil
                     shutil.copy('/home/creativetrendadmin/pythonTEst/TestBuild1.txt', '/home/creativetrendadmin/pythonTEst/TestBuild1_Repotester_Build2Test.buildNumbers.properties')
                     break
-                    print(d==a)
                 elif d > a:
                     import shutil
                     shutil.copy('/home/creativetrendadmin/pythonTEst/TestBuild1_Repotester_Build2Test.buildNumbers.properties','/home/creativetrendadmin/pythonTEst/TestBuild1.txt')
                     break
-                    print(d==a)
-    print('ok')
-    import time
-    
+    while b!=c:
+        if b>c:
+            import shutil
+            shutil.copy('/home/creativetrendadmin/pythonTEst/TestBuild1.txt', '/home/creativetrendadmin/pythonTEst/TestBuild1_Repotester_Build2Test.buildNumbers.properties')
+            break
+        elif c>b:
+            import shutil
+            shutil.copy('/home/creativetrendadmin/pythonTEst/TestBuild1.txt', '/home/creativetrendadmin/pythonTEst/TestBuild1_Repotester_Build2Test.buildNumbers.properties')
+            break
