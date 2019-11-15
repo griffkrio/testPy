@@ -15,15 +15,19 @@ while True:
                 "Event Name: {}\n".format(method, event.pathname, event.maskname))
             import time
             time.sleep(2)  
-            if method :
+            if event :
+                event.maskname = "IN_DELETE"
+                break
+            else :
                 import os.path, time
-                (mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat('/home/creativetrendadmin/git/testPy/notification/TestBuild1.txt')
-                a = mtime
-                b = ctime
-                import os.path, time
-                (mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat('/home/creativetrendadmin/git/testPy/notification/TestBuild1_Repotester_Build2Test.buildNumbers.properties')
-                c=ctime
-                d=mtime
+                path ='/home/creativetrendadmin/git/testPy/notification/TestBuild1.txt'
+                path1 = '/home/creativetrendadmin/git/testPy/notification/TestBuild1_Repotester_Build2Test.buildNumbers.properties'
+                (mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat(path)
+                (mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat(path1)
+                a= path(ctime)
+                b= path(mtime)
+                d= path1(ctime)
+                c=path1(mtime)
                 while a!=d:
                     if a!=d:
                         if a > d :
