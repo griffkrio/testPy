@@ -16,18 +16,13 @@ while True:
             import time
             time.sleep(2)  
             if event :
-                event.maskname = "IN_DELETE"
-                break
-            else :
                 import os.path, time
-                path ='/home/creativetrendadmin/git/testPy/notification/TestBuild1.txt'
-                path1 = '/home/creativetrendadmin/git/testPy/notification/TestBuild1_Repotester_Build2Test.buildNumbers.properties'
-                (mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat(path)
-                (mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat(path1)
-                a= path(ctime)
-                b= path(mtime)
-                d= path1(ctime)
-                c=path1(mtime)
+                (mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat('/home/creativetrendadmin/git/testPy/notification/TestBuild1.txt')
+                a= (ctime)
+                b= (mtime)
+                (mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat( '/home/creativetrendadmin/git/testPy/notification/TestBuild1_Repotester_Build2Test.buildNumbers.properties')
+                d= (ctime)
+                c= (mtime)
                 while a!=d:
                     if a!=d:
                         if a > d :
