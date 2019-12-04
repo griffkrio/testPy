@@ -6,6 +6,10 @@ while True:
                     "IN_ATTRIB",
                     "IN_DELETE",
                     "IN_MODIFY",
+                    "IN_UNMOUNT",
+                    "IN_DELETE_SELF",
+                    "IN_MOVE_SELF",
+                    "IN_MOVED_FROM",
                     "IN_UNMOUNT",]
 
     def process_generator(cls, method):
@@ -14,7 +18,7 @@ while True:
                 "Path name: {}\n"
                 "Event Name: {}\n".format(method, event.pathname, event.maskname))
             import time
-            time.sleep(2)  
+            time.sleep(5)  
             if method :
                 import os.path, time
                 (mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat('/home/creativetrendadmin/git/testPy/notification/TestBuild1.txt')
