@@ -31,7 +31,6 @@ while True:
                 (mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat( dt1)
                 dt1_a = mtime
                 dt1_b = ctime
-                import os.path, time
                 (mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat(dt2)
                 dt2_a=ctime
                 dt2_b=mtime
@@ -458,6 +457,6 @@ while True:
     watch_manager = pyinotify.WatchManager()
     event_notifier = pyinotify.Notifier(watch_manager, EventProcessor())
 
-    watch_this = os.path.abspath("/home/creativetrendadmin/git/testPy/notification")
+    watch_this = os.path.abspath("/root/.BuildServer/config/projects/HopaRenovation/buildNumbers/")
     watch_manager.add_watch(watch_this, pyinotify.ALL_EVENTS)
     event_notifier.loop()
