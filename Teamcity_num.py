@@ -12,11 +12,11 @@ while True:
                     "IN_MOVED_FROM",
                     "IN_UNMOUNT",]
 
-    def process_generator(cls, method):
+    def process_generator(cls,method):
         def _method_name(self, event):
             print("Method name: process_{}()\n"
                 "Path name: {}\n"
-                "Event Name: {}\n".format(method, event.pathname, event.maskname))
+                "Event Name: {}\n".format(methodmethod, event.pathname, event.maskname))
             import time
             time.sleep(5)  
             if method :
