@@ -1,10 +1,8 @@
 import os
 import os.path
-d=('/home/kriogen/git/testPy/notification/TestBuild1_Repotester_Build1Test.buildNumbers.properties')
-d= open(d)
-d= d.read()
-print (d)
-d=d.find('next.build')
+d=open ('/home/kriogen/git/testPy/notification/TestBuild1_Repotester_Build3Test.buildNumbers .properties','r' )
+d=d.readline(15)
 print(d)
-d=d+2
-print (d)
+d=d.find("next.build=")
+print (str(d))
+print(d)
