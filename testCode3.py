@@ -20,11 +20,14 @@ while True:
             import time
             time.sleep(5)  
             if method :
-                import os
-                import os.path
-                a=('/home/kriogen/git/testPy/notification/TestBuild1_Repotester_Build1Test.buildNumbers.properties')
-                b=('/home/kriogen/git/testPy/notification/TestBuild1_Repotester_Build2Test.buildNumbers.properties')
-                d=('/home/kriogen/git/testPy/notification/TestBuild1_Repotester_Build3Test.buildNumbers .properties')
+                import os.path, time
+                a=('/root/.BuildServer/config/projects/HopaRenovation/buildNumbers/HopaRenovation_Android.buildNumbers.properties')
+                b=('/root/.BuildServer/config/projects/HopaRenovation/buildNumbers/HopaRenovation_AndroidPredprod.buildNumbers.properties')
+                c=('/root/.BuildServer/config/projects/HopaRenovation/buildNumbers/HopaRenovation_AndroidPredprodX64.buildNumbers.properties')
+                d=('/root/.BuildServer/config/projects/HopaRenovation/buildNumbers/HopaRenovation_Android_Prod.buildNumbers.properties')
+                g=('/root/.BuildServer/config/projects/HopaRenovation/buildNumbers/HopaRenovation_AndroidProdX64.buildNumbers.properties')
+                f=('/root/.BuildServer/config/projects/HopaRenovation/buildNumbers/HopaRenovation_AndroidProdX86.buildNumbers.properties')
+                h=('/root/.BuildServer/config/projects/HopaRenovation/buildNumbers/HopaRenovation_Android_x64.buildNumbers.properties')
                 def MyFunk (x):
                     with open(x) as file:
                         lst = list()
@@ -71,6 +74,6 @@ while True:
     watch_manager = pyinotify.WatchManager()
     event_notifier = pyinotify.Notifier(watch_manager, EventProcessor())
 
-    watch_this = os.path.abspath("/home/kriogen/git/testPy/notification/")
+    watch_this = os.path.abspath("/root/.BuildServer/config/projects/HopaRenovation/buildNumbers/")
     watch_manager.add_watch(watch_this, pyinotify.ALL_EVENTS)
     event_notifier.loop()
