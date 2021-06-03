@@ -7,7 +7,7 @@
   <param name="branch" value="refs/heads/master" />
   <param name="ignoreKnownHosts" value="true" />
   <param name="push_url" value="https://github.com/griffkrio/testPy.git" />
-  <param name="secure:password" value="zxxdcf650bba4e09c21e87796e4cdbf1986" />
+  <param name="secure:password" value="credentialsJSON:cf2112c6-7094-4eaa-8577-f1f194062f9b" />
   <param name="submoduleCheckout" value="CHECKOUT" />
   <param name="url" value="https://github.com/griffkrio/testPy.git" />
   <param name="useAlternates" value="true" />
