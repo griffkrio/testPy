@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="2e2545fc-47f8-435a-8369-44a86141b076" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/2018.1/project-config.xsd">
+  <name>13</name>
+  <description />
+  <settings>
+    <options>
+      <option name="buildNumberPattern" value="%env.buildnum%" />
+    </options>
+    <parameters>
+      <param name="env.buildnum" value="SET_STEP_ERROR" />
+    </parameters>
+    <build-runners>
+      <runner id="RUNNER_15" name="ls" type="simpleRunner">
+        <parameters>
+          <param name="script.content"><![CDATA[STRING="SET env. - Well Done"
+FOLDER_NAME=$(cat build.txt)
+
+echo $FOLDER_NAME
+echo "##teamcity[setParameter name='buildnum' value='$FOLDER_NAME']"
+echo $STRING]]></param>
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings />
+    <requirements />
+    <build-triggers />
+    <cleanup />
+  </settings>
+</build-type>
+

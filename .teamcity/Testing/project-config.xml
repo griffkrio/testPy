@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="4dde75e3-63f6-4f5f-a3f0-708aa5c61f1e" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/2018.1/project-config.xsd">
+  <name>testing</name>
+  <parameters />
+  <project-extensions>
+    <extension id="PROJECT_EXT_3" type="JetBrains.SharedResources">
+      <parameters>
+        <param name="enabled" value="true" />
+        <param name="id" value="PROJECT_EXT_3" />
+        <param name="name" value="number" />
+        <param name="type" value="custom" />
+        <param name="values" value="5" />
+      </parameters>
+    </extension>
+    <extension id="PROJECT_EXT_4" type="versionedSettings">
+      <parameters>
+        <param name="buildSettings" value="ALWAYS_USE_CURRENT" />
+        <param name="credentialsStorageType" value="credentialsJSON" />
+        <param name="enabled" value="true" />
+        <param name="rootId" value="test" />
+        <param name="showChanges" value="true" />
+      </parameters>
+    </extension>
+  </project-extensions>
+  <cleanup />
+</project>
+
