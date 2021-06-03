@@ -3,9 +3,6 @@
   <name>13</name>
   <description />
   <settings>
-    <options>
-      <option name="buildNumberPattern" value="%env.buildnum%" />
-    </options>
     <parameters>
       <param name="env.buildnum" value="SET_STEP_ERROR" />
     </parameters>
