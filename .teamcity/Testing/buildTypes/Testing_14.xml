@@ -3,9 +3,6 @@
   <name>14</name>
   <description />
   <settings>
-    <options>
-      <option name="buildNumberPattern" value="%system.teamcity.build.properties.file%" />
-    </options>
     <parameters />
     <build-runners />
     <vcs-settings />
