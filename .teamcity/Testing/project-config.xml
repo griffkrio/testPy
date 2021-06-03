@@ -14,11 +14,10 @@
     </extension>
     <extension id="PROJECT_EXT_4" type="versionedSettings">
       <parameters>
-        <param name="buildSettings" value="PREFER_VCS" />
-        <param name="credentialsStorageType" value="credentialsJSON" />
+        <param name="buildSettings" value="ALWAYS_USE_CURRENT" />
         <param name="enabled" value="true" />
         <param name="rootId" value="test" />
-        <param name="showChanges" value="true" />
+        <param name="showChanges" value="false" />
       </parameters>
     </extension>
   </project-extensions>
